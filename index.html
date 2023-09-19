@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZARA</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+<div id="app">
+
+
+<div class="view view-main view-init">
+
+	
+	<section id="nav-panel" class="panel panel-left panel-cover">
+	
+		<div class="block" id="panel-user-info">
+			<div class="row">
+				<article class="col-30">
+					<img src="img/girl-face.jpg" alt="perfil usuario chica" class="img-fluid">
+				</article>
+				<article class="col-70">
+					<b>Valeria Castro</b>
+					valeriac1520@gmail.com
+				</article>
+			</div>			
+		</div>
+		
+		<div class="block" id="panel-nav">
+		
+			<div class="list media-list">
+				<ul>
+					<li>
+						<a href="/home/" class="item-content item-link panel-close">
+							<div class="item-media">
+								<i class="material-icons">home</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Inicio</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="#" class="item-content item-link">
+							<div class="item-media">
+								<i class="material-icons">account_circle</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Perfil de usuario</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="/cards/" class="item-content item-link panel-close">
+							<div class="item-media">
+								<i class="material-icons">groups</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Acerca de nosotros</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="/swiper/" class="item-content item-link panel-close">
+							<div class="item-media">
+								<i class="material-icons">fact_check</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Cómo Comprar</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="#" class="item-content item-link">
+							<div class="item-media">
+								<i class="material-icons">call</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Contacto</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="/products/" class="item-content item-link panel-close">
+							<div class="item-media">
+								<i class="material-icons">shopping_bag</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Productos</div>
+							</div>
+					  	</a>
+					</li>
+					<li>
+						<a href="#" class="item-content item-link login-screen-open" data-login-screen="#login-app">
+							<div class="item-media">
+								<i class="material-icons">logout</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Cerrar Sesión</div>
+							</div>
+					  	</a>
+					</li>
+		
+				</ul>
+			
+			</div>
+		
+		</div>
+		
+		
+	</section>
+	
+	
+	
+	
+	<section data-name="home" class="page">
+
+	  	<!-- Top Navbar -->
+		<nav class="navbar">
+		<div class="navbar-bg"></div>
+		<div class="navbar-inner">
+			<div class="title">ZARA</div>
+			<div class="right">
+				<a href="#" class="link panel-open" data-panel="left">
+					<i class="material-icons">menu</i>
+				</a>
+			</div>
+		</div>
+		</nav>
+
+
+		<section class="page-content">
+			<div class="block block-strong">
+				Consigue la mejor colección de ropa con ZARA!
+				<img src="img/bg.jpg" alt="" class="img-fluid">
+			</div>
+			
+			
+			<h2 class="block-title"></h2>
+			<div class="block">
+			
+				<a href="/products/" class="button button-round button-fill color-black">Productos</a>
+			
+				<a href="/detalle/" id="btnDialog" class="button button-round button-fill color-red margin-top">Dialog</a>
+				
+			</div>
+			
+			
+
+		</section> <!--/page-content -->
+
+	</section> <!--/page -->
+	
+	
+	<nav class="toolbar tabbar tabbar-labels toolbar-bottom">
+		<div class="toolbar-inner">
+			<a href="#" class="tab-link">
+				<i class="material-icons">favorite</i>
+				<span class="tabbar-label">Favoritos</span>
+			</a>
+			<a href="/home/" class="tab-link tab-link-active">
+				<i class="material-icons">notifications</i>
+				<span class="tabbar-label">Notificaciones</span>
+			</a>
+			<a href="#" class="tab-link">
+				<i class="material-icons">shopping_cart</i>
+				<span class="tabbar-label">Carrito</span>
+			</a>
+			<a href="#" class="tab-link">
+				<i class="material-icons">search</i>
+				<span class="tabbar-label">Buscador</span>
+			</a>
+		</div>
+	</nav>
+	
+
+	<section id="view-login">
+	
+		<div class="login-screen modal-in_" id="login-app">
+		  <!-- Default view-page layout -->
+		  <div class="view">
+			<div class="page login-screen-page">
+			  <!-- page-content has additional login-screen content -->
+			  <div class="page-content login-screen-content">
+				<div class="login-screen-title">Login</div>
+				<!-- Login form -->
+				<form>
+				  <div class="list">
+					<ul>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">person</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Username</div>
+						  <div class="item-input-wrap">
+							<input type="text" name="username" placeholder="Username">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">lock</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Password</div>
+						  <div class="item-input-wrap">
+							<input type="password" name="password" placeholder="Password">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				  <div class="list block">
+					<ul>
+					  <li>
+						<a href="#" class="button button-fill">Sign In</a>
+					  </li>
+					</ul>
+					<div class="block-footer">¿Tienes una cuenta? <a href="#" class="popup-open" data-popup="#popup-registro">Registrarse</a></div>
+					<div class="block-footer"><a href="#" class="login-screen-close">Acceder como invitado</a></div>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+	</section><!-- /login-screen -->
+	
+	
+	<section class="popup" id="popup-registro">
+	
+		<nav class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner">
+				<div class="right">
+					<a href="#" class="link popup-close">
+						<i class="material-icons">close</i>
+					</a>
+				</div>
+				<div class="title">Registro del APP</div>
+			</div>
+		</nav>
+		
+		
+		<section class="page-content no-padding-top">
+		
+			
+			<div class="block">
+			
+				<form>
+				  <div class="list no-hairlines-md">
+					<ul>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">person</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Username</div>
+						  <div class="item-input-wrap">
+							<input type="text" name="username" placeholder="Username">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">email</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Email</div>
+						  <div class="item-input-wrap">
+							<input type="email" name="email" placeholder="Email">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">lock</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Password</div>
+						  <div class="item-input-wrap">
+							<input type="password" name="password" placeholder="Password">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="item-content item-input">
+						<div class="item-media">
+							<i class="material-icons">lock</i>
+						</div>
+						<div class="item-inner">
+						  <div class="item-title item-floating-label">Confirm Password</div>
+						  <div class="item-input-wrap">
+							<input type="password" name="password" placeholder="Password">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				  <div class="list block">
+					<ul>
+					  <li>
+						<a href="#" class="button button-fill">Sign Up</a>
+					  </li>
+					</ul>
+				  </div>
+				</form>
+				
+			
+			
+			</div>
+			
+		</section>
+		
+	</section>
+	
+	
+	
+</div><!--/view -->
+
+
+
+</div><!--/app -->
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+	
+	
+	
+</body>
+</html>
